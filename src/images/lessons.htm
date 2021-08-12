@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />	<title>Стартуем с Twitter Bootstrap</title>
+	<meta name="title" content="Стартуем с Twitter Bootstrap" />
+	<meta name="keywords" content=" E44157" />
+	<meta name="description" content="В этой статье мы познакомимся с Bootstrap и попробуем на практике некоторые компоненты, для того чтобы убедиться, что данный фрэймворк действительно упрощает работу над созданием сайта." />
+    <link rel="shortcut icon" href="css/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="plugins/goodalert/styles/my/goodalert.css" />
+    <script src="plugins/goodalert/goodalert.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="/min/f=css/reset.min.css,css/style.css,plugins/syntax/styles/shCore.css,plugins/syntax/styles/shThemeDefault.css,css/colorbox.css,css/bookmarks.css&amp;1500981005"  type="text/css" media="screen, projection" />    <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+    <link rel="stylesheet" media="print" type="text/css" href="css/print.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="/js/jquery.cookie.min.js"></script>
+    <script src="/oauth/oa.js" type="text/javascript"></script>
+    <script src="/js/jquery.colorbox-min.js" type="text/javascript"></script>
+    
+    <script src="/min/f=js/jquery.easing.js,js/jquery.scroll.pack.js,js/ruseller.js,js/jquery.hoverflow.min.js,plugins/syntax/scripts/shCore.js,plugins/syntax/scripts/shBrushCss.js,plugins/syntax/scripts/shBrushJScript.js,plugins/syntax/scripts/shBrushPhp.js,plugins/syntax/scripts/shBrushXml.js,plugins/syntax/scripts/shBrushSql.js,js/ajaxupload.3.5.js,js/jquery.color.js,js/bookmarks.js&amp;1358395463"></script>        <!--[if lte IE 8]><script src="/min/b=js&amp;f=ie_corner.js,ie_must_die.js&amp;1296138205"></script><![endif]-->
+    <script>
+    SyntaxHighlighter.config.clipboardSwf = 'plugins/syntax/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    </script>    
+    <script src="/min/b=js&amp;f=jquery.bbcode.js,autoresize.jquery.js,comments.js&amp;1313749703"></script><link rel="alternate" type="application/rss+xml" title="RSS" href="//feeds.feedburner.com/ruseller/CdHX" />      
+<!--Digital window verification 001 -->
+<script data-ad-client="ca-pub-0562005659861244" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+<div id="body">
+ 
+    <div id="wrapper">
+    
+    	<div id="header">
+		
+		
+           
+            <div id="innerHeader" class="corner15">
+                <img id="droshaHeader" src="images/drosha_header.png" alt="*" />
+                <img id="header1" src="css/images/header1.jpg" />
+                <img id="header2" src="css/images/header2.jpg" />
+                <a href="/"><img id="logo" src="css/images/logo.png" alt="ruseller.com" /></a>
+                <p>Частная коллекция качественных материалов для тех, кто делает сайты</p>
+                  <div id="www-projects-list-wrapper">
+                       <a id="www-projects-list-toogle" href="#www-projects-list" class="toggle"></a> 
+                       <div id="www-projects-list">
+                            <ul>
+                                <li>
+                                    <img src="//photoshop-master.ru/favicon.ico" />
+                                    <a href="//photoshop-master.ru" target="_blank">Фотошоп-мастер</a>
+                                    <span><strong>2000+</strong> уроков по фотошопу</span>
+                                </li>
+                                
+                                <li>
+                                    <img src="//photo-monster.ru/template/2/images/favicon.ico" />
+                                    <a href="//photo-monster.ru" target="_blank">Фото-монстр</a>
+                                    <span><strong>300+</strong> уроков для фотографов</span>
+                                </li>                       
+                               
+                                <li>
+                                    <img src="//videosmile.ru/template/1/images/favicon.ico" />
+                                    <a href="//videosmile.ru" target="_blank">Видео-смайл</a>
+                                    <span><strong>200+ </strong>уроков по видеообработке</span>
+                                </li>
+
+                                <li style="height: 72px;">
+                                    <img src="//kzen.ru/wp-content/themes/kzen/assets/css/images/favicon32.png" />
+                                    <a href="//kzen.ru" target="_blank">Жизнь в стиле «Кайдзен»</a> 
+                                    <span>Техники и приемы для гармоничной и сбалансированной жизни</span>
+                                </li>   
+                                                                    
+                            </ul>
+                       </div>
+                  </div>
+                  <script>
+                  $(function (){ 
+	                   $('#www-projects-list-toogle').click(function(){
+	                        $('#www-projects-list').slideToggle();
+                            return false;
+	                   });
+                  });
+                  </script>                
+            </div>
+    	</div>
+   
+	   <section id="top_menu"> 
+           <nav>
+                    <a href="/"><img id="homeButton" src="css/images/home.png" /><img class="separator" src="css/images/menu_separator.png" /></a>
+                    <a href="page.php?doc=goodies">Видеокурсы на DVD<img class="separator" src="css/images/menu_separator.png" /></a>
+                                     
+                    <a href="page.php?doc=to_offer_lessons">Предложить урок<img class="separator" src="css/images/menu_separator.png" /> </a>
+                    <a href="page.php?doc=recommend">Рекомендую</a>
+           </nav>
+            <div id="search">
+                <form method="get" action="search.php">
+                        <div class="input">
+                            <input type="text" name="s" class="fields_default" value="Поиск" />
+                        </div>
+                    <input id="searchSubmit" type="submit" class="corner5" value="&raquo;&raquo;" />
+                </form>
+            </div>
+            <div class="clear"></div>
+        </section>	
+
+		<div id="after_header" style="text-align: center; position: relative; top: 99; z-index: 99; margin: 0 0 10px 0;"></div>    		
+
+	   <section id="middle">
+    		<div id="container">
+    			<div id="content">
+                <div id="hideRightSidebar"></div>
+                <div id="generalContent" class="contentConteiner">
+<ul id="track">
+         <li><a href="/">Главная</a>&raquo;</li>
+                  <li>
+                            <a href="lessons.php">Уроки</a>&raquo;
+                
+         </li>
+                  <li>
+                            <a href="lessons.php?rub=2">CSS</a>&raquo;
+                
+         </li>
+                  <li>
+                            Стартуем с Twitter Bootstrap                
+         </li>
+             </ul>
+<div class="clear"></div>            <ul id="tag_lessons">
+            <li><a href="/lessons.php?tag">Метки</a> урока:</li>
+                                    <li><a href="/lessons.php?tag=13">css</a></li>
+                                    <li><a href="/lessons.php?tag=8">jquery</a></li>
+                                    <li><a href="/lessons.php?tag=248">bootstrap</a></li>
+                        </ul>
+        
+
+     
+    
+    <div id="lessons">
+        <div style="text-align: center;">
+            <script defer src="/a4/4ee74c98ba739847a0d06e2f1e8c484d//rotor.js?t=1625402278"></script>        </div>        
+       
+                
+          
+        <h1 style="margin-top: 40px;">Стартуем с Twitter Bootstrap</h1>
+        <p>Писать сайт с нуля очень сложно. Даже матёрые разработчики, хорошо знающие такие языки, как JavaScript, HTML и CSS, сталкиваются с различного рода проблемами во время рабочего процесса. К счастью, разработчики и дизайнеры Twitter решили внести свой вклад в решение данной проблемы и запустили фрэймворк под названием Bootstrap, который предназначен для упрощения жизни дизайнеров и веб-девелоперов.</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/twitter-bootstrap.jpg" alt="" /></p>
+<p>В этой статье мы познакомимся с Bootstrap и попробуем на практике некоторые компоненты, для того чтобы убедиться, что данный фрэймворк действительно упрощает работу над созданием сайта.</p>
+<h2>Пробуем Bootstrap</h2>
+<p>Bootstrap - это очень мощный фрэймворк, оснащённый большим арсеналом готовых компонентов, которые нужны практически при разработке любого сайта:</p>
+<ul>
+<li>CSS сетка для построения адаптивного веб-дизайна</li>
+<li>CSS код оформления текста, кнопок, форм, таблиц и изображений</li>
+<li>Элементы пользовательского интерфейса: навигация, процент загрузки, всплывающие окна, постраничное разбиение контента, &ldquo;хлебные крошки&rdquo; и так далее. Все данные элементы также красиво оформлены CSS правилами</li>
+<li>jQuery плагины для использования интерактивных элементов сайта</li>
+</ul>
+<p>Для дальнейшей работы вам необходимо скачать <a href="http://twitter.github.com/bootstrap/index.html" target="_blank">Bootstrap и подключить файлы библиотеки:</a></p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;link rel="stylesheet" href="css/bootstrap.css"&gt;
+&lt;script src="js/bootstrap.min.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+</div>
+<p>Теперь можно работать!</p>
+<h2>CSS: Кнопки</h2>
+<p>В Bootstrap-е заложены CSS правила для стилизации HTML элементов, включая &lt;button&gt;. Данный элемент используется очень часто, поэтому в Bootstrap-е для него создали специальный класс btn:</p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;button type="button" class="btn"&gt;Default Button&lt;/button&gt;
+</pre>
+</div>
+<p>Результат отображения вы можете увидеть ниже:</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/button-styles.jpg" alt="" /></p>
+<p>Также мы можем воспользоваться и другими классами для кнопок, чтобы обозначить их роль:</p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;button type="button" class="btn btn-success"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Button&lt;/button&gt;
+</pre>
+</div>
+<p>В зависимости от роли кнопки, она будет окрашена в разные цвета:</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/button-colors.jpg" alt="" /></p>
+<p>К слову сказать, при разработке стилей Bootstrap использовали инструмент LESS. Мы уже рассматривали работу с <a href="lessons.php?rub_id=28&amp;id=915">LESS</a> ранее. Если вы захотите каким-то образом изменить стандартный облик кнопок, то учитывайте это.</p>
+<p>К примеру, если мы хотим изменить цвет кнопки с классом btn-success, то просто скорректируйте соответствующую переменную, затем пропустите код через LESS.</p>
+<div class="code_sample">
+<pre class="brush:css">@btnSuccessBackground:              #bce895; //#62c462;
+@btnSuccessBackgroundHighlight:     #a0cd78; //#51a351;
+</pre>
+</div>
+<p>Такие элементы, как тень, градиент, будут автоматически конфигурироваться под новые условия:</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/button-less.jpg" alt="" /></p>
+<h2>Элементы пользовательского интерфейса</h2>
+<p>Bootstrap также содержит элементы пользовательского интерфейса: навигация, процент загрузки, всплывающие окна, постраничное разбиение контента, &ldquo;хлебные крошки&rdquo; и так далее. Добавить эти элементы также просто, как и оформить кнопку. Давайте возьмём предыдущий пример и поместим все кнопки в группу:</p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;div class="btn-group"&gt;
+&lt;button type="button" class="btn btn-success"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<p>Теперь наши кнопки обёрнуты в div с классом btn-group:</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/button-group.jpg" alt="" /></p>
+<p>Также мы можем воспользоваться и другими классами для изменения позиционирования группы кнопок. К примеру, выстроим их вертикально. Для этого добавим класс btn-group-vertical:</p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;div class="btn-group btn-group-vertical"&gt;
+&lt;button type="button" class="btn btn-success"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<p style="text-align: center;"><img src="lessons/les1662/images/button-group-vertical.jpg" alt="" /></p>
+<h2>jQuery плагины</h2>
+<p>Я до сих пор помню то время, когда мои сайты были статичными, и я долго искал какие-то плагины для добавления интерактивных элементов. Теперь этого делать не надо, потому что в Bootstrap-е есть куча jQuery плагинов для создания аккордеонов, всплывающих подсказок, модальных и всплывающих окон, табов и прочего..</p>
+<p>В следующем примере мы применим плагин Tooltip:</p>
+<div class="code_sample">
+<pre class="brush:xhtml">&lt;p id="container"&gt;Jujubes icing oat cake
+&lt;a href="#" rel="tooltip" title="a Lolipop Tiramissu?"&gt;lollipop tiramisu&lt;/a&gt;.
+Tiramisu sesame snaps croissant chupa chups chupa chups chocolate cake candy sugar plum
+jelly beans. Lollipop pudding jelly sweet jujubes cookie pudding. Oat cake topping gummi
+bears oat cake. Muffin jelly-o cake sesame snaps ice cream cotton candy.&lt;/p&gt;
+</pre>
+</div>
+<p>Прошу обратить внимание на то, что мы добавили ссылке атрибут rel и title. Таким образом, подсказка возникнет, когда мы подведём мышь к слову. Для активации плагина, напишем скрипт:</p>
+<div class="code_sample">
+<pre class="brush:js">$('#container').tooltip({
+    selector: "a[rel=tooltip]"
+});
+</pre>
+</div>
+<p>Данный скрипт будет преобразовывать все ссылки, у которых атрибут rel равен tooltip в элементе с id = container.</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/bootstrap-tooltip.jpg" alt="" /></p>
+<p>Вот так вот просто в наше время. :) Раньше подключение разных плагинов могло вызвать ошибки, конфликты переменных. Теперь же, при использовании Bootstrap jQuery плагинов, такого не случится.</p>
+<h2>Настройка под себя</h2>
+<p>На самом деле Bootstrap - действительно гигантская библиотека, и возможно, для ваших нужд она не нужна в полном объёме. Именно поэтому создатели предоставляют специальную страницу, где мы можем выбрать только те компоненты, которые нам нужны.</p>
+<p style="text-align: center;"><img src="lessons/les1662/images/customize.jpg" alt="" /></p>
+<h2>Заключение</h2>
+<p>Конечно же, в Bootstrap-е намного больше компонентов. В следующих уроках мы будем постепенно их изучать. Ниже вы сможете найти небольшой список сайтов, который используют Bootstrap. Надеюсь, кто-то будет впечатлён!</p>
+<p><a href="http://www.thestudiodreams.com/" target="_blank">The Studio Dreams</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/thestudiodreams.jpg" alt="" /></p>
+<p><a href="http://madeiracloud.com/" target="_blank">Madeira Cloud</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/madeiracloud.jpg" alt="" /></p>
+<p><a href="http://opencooks.com/" target="_blank">Open Cooks</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/opencooks.jpg" alt="" /></p>
+<p><a href="http://www.leanix.net/" target="_blank">Leanix</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/leanix.jpg" alt="" /></p>
+<p><a href="http://www.brewerydb.com/" target="_blank">BreweryDB</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/brewerydb.jpg" alt="" /></p>
+<p><a href="https://kippt.com/" target="_blank">Kippt</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/kippt.jpg" alt="" /></p>
+<p><a href="http://www.8020select.com/" target="_blank">8020 Select</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/8020select.jpg" alt="" /></p>
+<p><a href="http://www.appster.com.au/" target="_blank">Appster</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/appster.jpg" alt="" /></p>
+<p><a href="http://www.ws-interactive.fr/" target="_blank">WS Interactive</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/ws-interactive.jpg" alt="" /></p>
+<p><a href="http://percentagecalculator.info/" target="_blank">Percentage Calculator</a></p>
+<p style="text-align: center;"><img src="lessons/les1662/images/calculator.jpg" alt="" /></p>        <div id="lessonPrepared">
+            <p>Данный урок подготовлен для вас командой сайта <a href="http://ruseller.com">ruseller.com</a><br />
+               Источник урока: <a target="_blank" href="http://www.hongkiat.com/blog/twitter-bootstrap/">http://www.hongkiat.com/blog/twitter-bootstrap/</a><br />
+               Перевел: Станислав Протасевич<br />
+               Урок создан: 14 Марта 2013<br />
+               Просмотров: 80057<br />
+               <a href="page.php?doc=reprint">Правила перепечатки</a>
+            </p>
+        </div>
+    </div>
+    <hr />                     
+    <div id="contentInfo">    
+                         
+	  
+      	
+    </div>           
+</div>    
+<div class="contentConteiner">    
+    <h2>5 последних уроков рубрики "CSS"</h2>
+
+    <ul id="last5" class="lessons">
+             <li>  
+             <img src="lessons/les2895/thumbnail.png" /> 
+             <h4><a href="/lessons.php?rub=2&amp;id=2895">Забавные эффекты для букв</a></h4>
+             <p>Небольшой эффект с интерактивной анимацией букв.</p>
+             <div class="clear"></div>
+        </li>                     
+            <li>  
+             <img src="lessons/les2891/thumbnail.png" /> 
+             <h4><a href="/lessons.php?rub=2&amp;id=2891">Реализация забавных подсказок</a></h4>
+             <p>Небольшой концепт забавных подсказок, которые реализованы на SVG и anime.js. Помимо особого стиля в примере реализована анимация и трансформация графических объектов.</p>
+             <div class="clear"></div>
+        </li>                     
+            <li>  
+             <img src="lessons/les2887/thumbnail.png" /> 
+             <h4><a href="/lessons.php?rub=2&amp;id=2887">Анимированные буквы</a></h4>
+             <p>Эксперимент: анимированные SVG буквы на базе библиотеки anime.js.</p>
+             <div class="clear"></div>
+        </li>                     
+            <li>  
+             <img src="lessons/les2890/thumbnail.jpg" /> 
+             <h4><a href="/lessons.php?rub=2&amp;id=2890">Солнцезащитные очки от первого лица</a></h4>
+             <p>Прикольный эксперимент веб страницы отображение которой осуществляется “от первого лица” через солнцезащитные очки.</p>
+             <div class="clear"></div>
+        </li>                     
+            <li>  
+             <img src="lessons/les2889/thumbnail.png" /> 
+             <h4><a href="/lessons.php?rub=2&amp;id=2889">Раскрывающаяся навигация</a></h4>
+             <p>Экспериментальный скрипт раскрывающейся навигации.</p>
+             <div class="clear"></div>
+        </li>                     
+                                                                                           
+    </ul> 
+    <div class="clear"></div>
+       
+
+</div>
+<style>
+    #hypercomments_widget{
+        margin-top: 30px;
+    }
+    #comment{
+        display: none;
+    }
+    
+    .hc__form__send {
+        background: #3da115 url(/css/images/button_green_bg.png) repeat-x !important;
+        border: solid 1px #fff !important; 
+        color: white !important;
+        border-radius: 6px !important;
+        padding: 2px 15px !important;
+    }    
+    
+</style>
+<div class="contentConteiner">
+     <article>
+                               <div class="noRegister">
+                <a class="sign_up">Зарегистрируйтесь</a> или <a id="autorizLink" href="#">авторизуйтесь</a>, чтобы добавлять комментарии, оценивать уроки и сохранять их в личном кабинете
+             </div>
+         
+                  <div id="hypercomments_widget">
+             <ul id="comment">
+                <li data-time="1363263021" id="comm33038"><img class="avatar" src="http://cs308919.vk.me/v308919771/10db9/w2FmVU2a2uo.jpg" />
+<div class="comment-content" data-uid="" data-cid="33038">
+    <div class="vcorner"></div>
+    <small class="date">14 Марта 2013 16:10</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                target_blank    </h6>
+    <div class="p">Действительно крутой фрэймворк! На его основе создаются многие другие типа bootmetro</div>
+    
+        
+     <div class="clear"></div>
+</div></li><li data-time="1363269852" id="comm33044"><img class="avatar" src="/avatar_img/avt40184.jpg" />
+<div class="comment-content" data-uid="" data-cid="33044">
+    <div class="vcorner"></div>
+    <small class="date">14 Марта 2013 18:04</small>
+    <h6>
+                teha    </h6>
+    <div class="p">Фреймворк отличный, но писать 100500 уроков по нему не стоит. На оф. сайте все уже и так написано. Лучше что-нибудь еще интересное выложите.
+За урок спасибо!</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33044"><li data-time="1363466223" id="comm33099"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33099">
+    <div class="vcorner"></div>
+    <small class="date">17 Марта 2013 00:37</small>
+    <h6>
+                timondrik1991    </h6>
+    <div class="p">Кому то удобнее увидеть всё тут и не стоит решать за всех.</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li><li data-time="1363289910" id="comm33056"><img class="avatar" src="/avatar_img/avt43162.png" />
+<div class="comment-content" data-uid="" data-cid="33056">
+    <div class="vcorner"></div>
+    <small class="date">14 Марта 2013 23:38</small>
+    <h6>
+                vUdav    </h6>
+    <div class="p">Какихто вводных моментов будет вполне достаточно для использования этого фреймворка. Вот русская документация не помешала бы)</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33056"><li data-time="1363377910" id="comm33071"><img class="avatar" src="/avatar_img/avt125893.png" />
+<div class="comment-content" data-uid="" data-cid="33071">
+    <div class="vcorner"></div>
+    <small class="date">16 Марта 2013 00:05</small>
+    <h6>
+                Electrica    </h6>
+    <div class="p">http://mybootstrap.ru/ вот тут русская документация</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li><li data-time="1363456927" id="comm33095"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33095">
+    <div class="vcorner"></div>
+    <small class="date">16 Марта 2013 22:02</small>
+    <h6>
+                maratio23    </h6>
+    <div class="p">А этот код куда ставить?<pre>$('#container').tooltip({ selector: &quot;a[rel=tooltip]&quot;
+});</pre> ,чето я не разобрался(</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33095"><li data-time="1363457694" id="comm33096"><img class="avatar" src="http://cs627425.vk.me/v627425712/1d6de/1YjrIqA6nTw.jpg" />
+<div class="comment-content" data-uid="" data-cid="33096">
+    <div class="vcorner"></div>
+    <small class="date">16 Марта 2013 22:14</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                stas.protasevich    </h6>
+    <div class="p">Во-первых, поскольку все плагины Bootstrap это jQuery плагины, вам необходимо перед подключением bootstrap.min.js подключить сам jQuery:
+<pre>
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+Далее код подключения Tooltip поместите в обычный блок инициализации jQuery:
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt; $(&quot;document&quot;).ready(function(){ // код tooltip });
+&lt;/script&gt;
+</pre>
+Перед выводом параграфа сделайте пару переносов на новую строку br, чтобы увидеть tooltip.</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33096"><li data-time="1363502577" id="comm33105"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33105">
+    <div class="vcorner"></div>
+    <small class="date">17 Марта 2013 10:42</small>
+    <h6>
+                maratio23    </h6>
+    <div class="p">Спасибо, все получилось.Ждем новых подробностей про bootstrap.</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33105"><li data-time="1363879357" id="comm33184"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33184">
+    <div class="vcorner"></div>
+    <small class="date">21 Марта 2013 19:22</small>
+    <h6>
+                ghbrjkbcn    </h6>
+    <div class="p">А у меня не получилось может скинешь на почту fantom-315@yandex.ru пример как ты выводил а то плагин вроде хороший</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li><li data-time="1380569955" id="comm36327"><img class="avatar" src="http://cs402919.vk.me/u18787505/d_daf258d1.jpg" />
+<div class="comment-content" data-uid="" data-cid="36327">
+    <div class="vcorner"></div>
+    <small class="date">30 Сентября 2013 23:39</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                xoxa99    </h6>
+    <div class="p"><pre>// код tooltip</pre>
+а что является кодом тултип? напишите полностью, вместе с script</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li></ul></li><li data-time="1363481778" id="comm33101"><img class="avatar" src="http://cs606025.vk.me/v606025049/7e78/ynLtxtkoHdE.jpg" />
+<div class="comment-content" data-uid="" data-cid="33101">
+    <div class="vcorner"></div>
+    <small class="date">17 Марта 2013 04:56</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                north_leshiy    </h6>
+    <div class="p">Полезно!!! Ждем продолжения!</div>
+    
+        
+     <div class="clear"></div>
+</div></li><li data-time="1365948249" id="comm33647"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33647">
+    <div class="vcorner"></div>
+    <small class="date">14 Апреля 2013 18:04</small>
+    <h6>
+                ikeacatalogue    </h6>
+    <div class="p">Подскажите, на страничке bootstrap js http://twitter.github.io/bootstrap/javascript.html есть пример Example alerts, не могу разобраться каким образом они добавляют крест выхода в alert поле?
+Они пишут Usage
+Enable dismissal of an alert via JavaScript:
+$(&quot;.alert&quot;).alert()
+Но при этом на самой странице с примером в коде я этой строки не нашел?</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33647"><li data-time="1365949922" id="comm33649"><img class="avatar" src="http://cs627425.vk.me/v627425712/1d6de/1YjrIqA6nTw.jpg" />
+<div class="comment-content" data-uid="" data-cid="33649">
+    <div class="vcorner"></div>
+    <small class="date">14 Апреля 2013 18:32</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                stas.protasevich    </h6>
+    <div class="p">не понял вопрос. как они добавляют значок закрытия или что?</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33649"><li data-time="1365956166" id="comm33651"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33651">
+    <div class="vcorner"></div>
+    <small class="date">14 Апреля 2013 20:16</small>
+    <h6>
+                ikeacatalogue    </h6>
+    <div class="p">да, все верно- как они добавляют значок закрытия?</div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33651"><li data-time="1366002659" id="comm33656"><img class="avatar" src="http://cs627425.vk.me/v627425712/1d6de/1YjrIqA6nTw.jpg" />
+<div class="comment-content" data-uid="" data-cid="33656">
+    <div class="vcorner"></div>
+    <small class="date">15 Апреля 2013 09:10</small>
+    <h6>
+                    <img class="provider_icon" src="/images/openid/vkontakte.png" />
+                stas.protasevich    </h6>
+    <div class="p">Вот пример с кнопкой закрытия:
+<pre>
+&lt;div id=&quot;qwe&quot; class=&quot;red alert alert-block alert-error fade in&quot;&gt;	&lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident, quae minima non maiores earum ea deserunt cupiditate asperiores sunt praesentium maxime corrupti debitis quod laudantium temporibus voluptates laborum itaque.
+&lt;/div&gt;
+</pre></div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs33656"><li data-time="1366047519" id="comm33665"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="33665">
+    <div class="vcorner"></div>
+    <small class="date">15 Апреля 2013 21:38</small>
+    <h6>
+                ikeacatalogue    </h6>
+    <div class="p">Спасибо.</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li></ul></li></ul></li></ul></li><li data-time="1371738697" id="comm34929"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="34929">
+    <div class="vcorner"></div>
+    <small class="date">20 Июня 2013 18:31</small>
+    <h6>
+                sergejweb    </h6>
+    <div class="p">Вот еще ресурс на русском языке про Twitter Bootstrap www.bootstrap-ninja.ru</div>
+    
+        
+     <div class="clear"></div>
+</div></li><li data-time="1385043265" id="comm36868"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="36868">
+    <div class="vcorner"></div>
+    <small class="date">21 Ноября 2013 18:14</small>
+    <h6>
+                kypok    </h6>
+    <div class="p">malina95, и чем же устарел Bootstrap? Можно конкретно?
+Русская поддержка есть для Bootstrap 3 www.bootstrap-3.ru - значит он людям нужен.</div>
+    
+        
+     <div class="clear"></div>
+</div></li><li data-time="" id="comm"><img class="avatar" src="images/no_avt.jpg" />
+<div class="comment-content" data-uid="" data-cid="">
+    <div class="vcorner"></div>
+    <small class="date"></small>
+    <h6>
+                    </h6>
+    <div class="p"><em>Комментарий удален</em></div>
+    
+        
+     <div class="clear"></div>
+</div><ul id="childs"><li data-time="1363519405" id="comm33106"><img class="avatar" src="/avatar_img/avt118536.png" />
+<div class="comment-content" data-uid="" data-cid="33106">
+    <div class="vcorner"></div>
+    <small class="date">17 Марта 2013 15:23</small>
+    <h6>
+                malina95    </h6>
+    <div class="p">Согласен, bootstrap хоть и мощный и большой, но он уже немного устарел... Мне кажется что дизайн windows 8 намного круче смотрится, и меньше весит</div>
+    
+        
+     <div class="clear"></div>
+</div></li></ul></li>                                                                 
+             </ul>
+         </div>
+    </article> 
+</div>         
+
+
+<script type="text/javascript">
+var hc_config = {"widget":"Stream","widget_id":83049,"xid":"1_1662"};
+hc_config.callback = function(app, init){
+    var form = document.querySelector('.hc__form'); 
+    var menu = document.querySelector('.hc__menu'); 
+  
+      if (document.cookie.indexOf("policy_accept") < 0){
+          form.classList.add('hidden');    
+          var div = document.createElement('div');
+          var btn = document.createElement('button');
+          
+          div.classList.add('hc_accept_private'); 
+          btn.classList.add('hc__form__send'); 
+          
+          btn.innerHTML = '✔ Согласен'; 
+          div.innerHTML = '<p>Сервис комментирования материалов сайта ruseller.com не является частью сайта ruseller.com, а предоставлен сервисом hypercomments.com. При размещении комментария администрация сайта в целях вашей безопасности просит не размещать персональные данные, а при их размещении ознакомиться с политикой конфиденциальности сервиса hypercomments.com, поскольку обработка персональных данных осуществляется сервисом hypercomments.com самостоятельно.</p>';
+          
+          btn.addEventListener("click", function() {
+            var date = new Date(new Date().getTime() + 31536000 * 1000);
+            
+            form.classList.remove('hidden');
+            div.classList.add('hidden');
+            
+            document.cookie = "policy_accept=1; path=/; expires=" + date.toUTCString();
+            return false;
+         });                  
+          
+          div.appendChild(btn);
+          menu.parentNode.insertBefore(div, menu.nextSibling);
+    }; 
+}
+_hcwp = window._hcwp || [];
+_hcwp.push(hc_config);
+(function() {
+if("HC_LOAD_INIT" in window)return;
+HC_LOAD_INIT = true;
+var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/83049/"+lang+"/widget.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>            	</div><!-- #content-->
+    		</div><!-- #container-->
+    
+  		<aside id="sideLeft">
+                <div class="box">
+    <div class="innerBox">
+        <h3><a href="lessons.php">Уроки и статьи:</a></h3>
+            <menu>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=1">
+                            HTML и DHTML                             
+                                <span>(85)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=2">
+                            CSS                             
+                                <span>(557)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=28">
+                            Разное                             
+                                <span>(442)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=29">
+                            Для сайта                             
+                                <span>(185)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=30">
+                            Электронные деньги                             
+                                <span>(2)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=32">
+                            jQuery                             
+                                <span>(580)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=33">
+                            Mootools                             
+                                <span>(17)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=35">
+                            Юзабилити                             
+                                <span>(22)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=37">
+                            PHP                             
+                                <span>(502)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=40">
+                            Wordpress                             
+                                <span>(107)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=41">
+                            Joomla!                             
+                                <span>(16)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=42">
+                            SEO                             
+                                <span>(12)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="lessons.php?rub=43">
+                            HTML5                             
+                                <span>(45)</span>
+                                                   </a>
+                   </li>
+                
+                                <li><a href="./project">Проекты <span style="color: #5e0404;">NEW!</span></a></li>
+                            </menu>
+      </div>           
+</div><div class="box">
+    <div class="innerBox">
+        <h3><a href="adds.php">Скачать:</a></h3>
+            <menu>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=10">
+                            Программы                             
+                                <span>(23)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=11">
+                            Скрипты                             
+                                <span>(105)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=12">
+                            Видеоуроки                             
+                                <span>(95)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=31">
+                            Дизайн                             
+                                <span>(686)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=34">
+                            Полезное                             
+                                <span>(45)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=36">
+                            Шаблоны сайтов                             
+                                <span>(1540)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=38">
+                            Flash заготовки                             
+                                <span>(122)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="adds.php?rub=39">
+                            Wordpress темы                             
+                                <span>(248)</span>
+                                                   </a>
+                   </li>
+                
+                            </menu>
+      </div>           
+</div><div class="box">
+    <div class="innerBox">
+        <h3><a href="service.php">Online-инструменты:</a></h3>
+            <menu>
+                                    
+                   <li >
+                       <a  href="service.php?rub=19">
+                            CSS                             
+                                <span>(55)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="service.php?rub=21">
+                            Изображения                             
+                                <span>(40)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a  href="service.php?rub=22">
+                            Разное                             
+                                <span>(53)</span>
+                                                   </a>
+                   </li>
+                                    
+                   <li >
+                       <a target="_blank" href="http://hosting-ninja.ru">
+                            Подобрать хостинг                                                   </a>
+                   </li>
+                
+                            </menu>
+      </div>           
+</div> 			    <div class="box hn">
+                    <div class="innerBox">
+    			         <h3>ТОП-10 Хостеров:</h3>
+                         <menu>
+                                                     </menu>
+                         <div class="center"><a style="text-decoration: underline;" target="_blank" href="//hosting-ninja.ru/rating/">Смотреть весь рейтинг</a></div>
+                    </div>                
+                </div>
+                
+    			<div class="box">
+                    <div class="innerBox">
+    			         <h3>Шпаргалки:</h3>
+                         <menu>
+                            <li><a target="_blank" rel="nofollow" href="http://jquery.page2page.ru/">JQUERY</a></li>
+                            <li><a href="shporacss.php">CSS</a></li>
+                            <li><a href="htmlshpora.php">HTML</a></li>
+                         </menu>
+                    </div>                
+                </div>
+                                
+                                                     			<div class="box">
+                    <div id="subscribeEmail" class="innerBox sidebarForm">
+    			        <h4>Получать новые уроки на E-mail:</h4>
+                        <form action="//feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('//feedburner.google.com/fb/a/mailverify?uri=ruseller/CdHX', 'popupwindow','scrollbars=yes,width=550,height=520');return true">
+                            <label>Ваш email:</label>
+                            <div class="input">
+                                <input type="text" name="email" />
+                            </div>    
+                            <input type="hidden" value="ruseller/CdHX" name="uri" />
+                            <input type="hidden" name="loc" value="ru_RU" />
+                            <button type="submit" class="button green">Подписаться</button>
+                        </form>
+                    </div>                
+                </div>                                
+    			<div class="box">
+                    <div id="rss" class="innerBox">
+                        <h4>RSS подписка</h4>
+                        <img src="css/images/rss.jpg" /><br />
+                        <p><img src="//feeds.feedburner.com/~fc/ruseller/CdHX?bg=393939&amp;fg=ffffff&amp;anim=0" height="26" width="88" style="border:0" alt="feed" /></p>
+                        <a href="//feeds.feedburner.com/ruseller/CdHX" class="button orange">Подписаться</a>
+                    </div>
+ 
+                                      
+                </div>                 
+                                                               
+    		</aside><!-- #sideLeft -->
+    		<aside id="sideRight">
+                <div class="box">
+                    <div id="login" class="innerBox sidebarForm">
+                    <span class="oAuth" id="oAuthTop" >
+                                                    <a href="http://oauth.vk.com//authorize?client_id=2438490&redirect_uri=http://ruseller.com/oauth/?provider=vkontakte&response_type=code" title="Войти с Вконтакте">
+                                <img src="/images/openid/vkontakte.png"/>
+                            </a>  
+                                                    <a href="https://connect.mail.ru/oauth/authorize?client_id=639618&response_type=code&redirect_uri=http://ruseller.com/oauth/?provider=mailru" title="Войти с Mail.ru">
+                                <img src="/images/openid/mailru.png"/>
+                            </a>  
+                                                    <a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=3621888&response_type=code&redirect_uri=http://ruseller.com/oauth/?provider=odnoklassniki" title="Войти с Одноклассники">
+                                <img src="/images/openid/odnoklassniki.png"/>
+                            </a>  
+                                                    <a href="https://www.facebook.com/dialog/oauth?client_id=220051411380386&redirect_uri=http%3A%2F%2Fruseller.com%2Foauth%2F%3Fprovider%3Dfacebook" title="Войти с Facebook">
+                                <img src="/images/openid/facebook.png"/>
+                            </a>  
+                                              </span>    			        
+                        
+                         <h4>Авторизация</h4>
+                         <form action="userarea.php?action=login" method="post">
+                             <label>Логин </label>
+                             <div class="input">
+                                <input type="text" name="name" />
+                             </div>                         
+                            <label>Пароль</label>
+                            <div class="input">
+                                <input type="password" name="password" />                         
+                            </div>
+                            <button type="submit" class="button green">Я все заполнил</button>
+                        </form>
+                        <div id="recoveryPassword">
+                            <a class="sign_up">Регистрация</a> <br /> <a class="recoveryPassword" href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+                </div>                                <div class="box">
+                    <div style="padding-bottom: 0; overflow: hidden;" class="innerBox">
+                        <h3>Рекомендуем</h3>
+                        <div style="overflow: hidden;">
+                            <script defer src="/a4/0b4fe2b070a87a6dc043c31ad777b199//rotor.js?t=1625295572"></script>                        </div>
+                    </div>
+                </div>
+                
+                
+                 
+                                
+               
+
+                
+                <div class="box">
+                    <div style="padding-bottom: 0; overflow: hidden;" class="innerBox">
+                        <h3>Рекомендуем</h3>
+                        <div>
+                            <script defer src="/a4/16f397b72c87552c94fe9adc2f7652aa//rotor.js?t=1625286941"></script>                        </div>
+                    </div>
+                </div>                
+
+                                                                                               
+    		</aside><!-- #sideRight -->
+           
+    	</section><!-- #middle-->
+    </div><!-- #wrapper -->
+        <div id="footer_wrap"></div>
+    	<footer id="footer">
+                <nav>
+                    <ul> 
+                        <li><a href="/">Главная</a><span>|</span></li>
+                        
+                        <li><a href="page.php?doc=goodies">Видеокурсы на DVD</a><span>|</span></li>
+                                             
+                        <li><a href="page.php?doc=to_offer_lessons">Предложить урок</a></li>
+                    </ul>
+                </nav> 
+                <small id="copyright">&copy; 2021 Евгений Попов. Все права защищены. <a href="//evgeniypopov.ru">Служба поддержки</a><br />
+                Сайт мониторится с помощью сервиса  <a href="//r.1popov.ru/1325663033">ping-admin</a>
+                </small>
+                <a href="/images/comix.jpg" id="kinderSurprise">:)</a>
+    	</footer><!-- #footer -->
+</div>
+
+<div id="rusellerOverlay"></div>
+<img id="big_loader" src="css/images/big_loader.gif" />
+<div id="rusellerBox">
+    <a id="rusellerBoxClose"></a>
+    <div id="rusellerBoxContent">
+    </div>
+</div>
+<a href="#" id="toTop">^ Наверх ^</a>
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter3946864 = new Ya.Metrika({
+                    id:3946864,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/3946864" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>            
+   
+
+ 
+    
+
